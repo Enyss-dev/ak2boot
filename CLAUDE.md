@@ -29,6 +29,11 @@ Apply this process to EVERY task, in every session (web and local), from the sta
 8. **Keep changes small, focused, and readable.** Match the existing code style.
 9. **Explain decisions in simple English** (A2/B1) as you go — the "what" and the "why".
 
+**Before any non-trivial task, read [`docs/WAY_OF_WORKING.md`](docs/WAY_OF_WORKING.md).**
+It holds the full professional method: the task loop, 12-Factor SaaS architecture,
+GitHub Flow, testing, CI/CD, security, and strict **accounting rules** (double-entry,
+immutable records, audit trail, exact money). Follow it and keep it up to date.
+
 ## Project
 
 `ak2boot` — a coding project. The user also works on **accounting** topics.
