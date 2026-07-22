@@ -29,10 +29,11 @@ Apply this process to EVERY task, in every session (web and local), from the sta
 8. **Keep changes small, focused, and readable.** Match the existing code style.
 9. **Explain decisions in simple English** (A2/B1) as you go — the "what" and the "why".
 
-**Before any non-trivial task, read [`docs/WAY_OF_WORKING.md`](docs/WAY_OF_WORKING.md).**
-It holds the full professional method: the task loop, 12-Factor SaaS architecture,
-GitHub Flow, testing, CI/CD, security, and strict **accounting rules** (double-entry,
-immutable records, audit trail, exact money). Follow it and keep it up to date.
+**Before any non-trivial task, read [`docs/WAY_OF_WORKING.md`](docs/WAY_OF_WORKING.md)
+and follow it — it is MANDATORY, not optional.** It holds the full professional method
+for every SaaS, app, and development: the non-negotiable core (Agile loop, 12-Factor
+architecture, GitHub Flow), the task loop, testing, CI/CD, and security. Keep it up to
+date. (Accounting-specific rules will be added later, when we start that work.)
 
 ## Project
 

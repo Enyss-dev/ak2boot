@@ -1,11 +1,34 @@
-# Way of Working — our professional method
+# Way of Working — our professional method (MANDATORY)
 
-This is the method we follow on **every** task, for `ak2boot`, for SaaS, and for
-accounting work. The goal: **fewer bugs, fewer problems, clear organisation**, and
-work that a senior engineer would be proud of. Take your time. Quality over speed.
+**These rules are an obligation, not a suggestion.** Follow them on **every** task,
+for **every** SaaS, **every** app, and **every** development in this project — no
+exceptions. The goal: **fewer bugs, fewer problems, clear organisation**, and work
+that a senior engineer would be proud of. Take your time. Quality over speed.
 
-Claude: read this file before any non-trivial task. Keep it up to date as the
-project grows.
+Claude: read this file before any non-trivial task, follow it strictly, and keep it
+up to date as the project grows. If a rule must be broken for a good reason, stop and
+explain why to the user first — never skip a rule silently.
+
+---
+
+## 0. The non-negotiable core (always, everywhere)
+
+These three practices are the foundation. They are never optional:
+
+1. **Work in a loop, not a straight line (Agile).**
+   understand → plan → build small → test → ship → improve. Then repeat.
+   ([SDLC 2026](https://dignizant.com/posts/software-development-life-cycle-complete-guide-for-2026),
+   [SaaS lifecycle](https://www.classicinformatics.com/blog/saas-development-lifecycle))
+2. **SaaS architecture: the 12-Factor App** — the world standard for clean, scalable
+   cloud apps.
+   ([12factor.net](https://12factor.net/),
+   [ClickIT](https://www.clickittech.com/devops/twelve-factor-app/))
+3. **Git: GitHub Flow** — one `main` branch (always working), small feature branches,
+   Pull Requests with review + tests. Best for small teams.
+   ([Toptal](https://www.toptal.com/developers/software/trunk-based-development-git-flow),
+   [AWS guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/git-branching-strategies.html))
+
+The sections below explain how we apply these in practice.
 
 ---
 
@@ -104,8 +127,7 @@ We use [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-fl
   few **end-to-end** tests.
 - **Test each step** as you build it.
 - When you fix a bug, first **write a test that fails**, then fix it (regression test).
-- Aim for **meaningful coverage** of important logic — not 100% for the number,
-  but cover the risky and money-related parts fully.
+- Aim for **meaningful coverage** of important logic — cover the risky parts fully.
 - Tests must be **fast, repeatable, and independent**.
 
 ---
@@ -133,26 +155,7 @@ We use [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-fl
 
 ---
 
-## 10. Accounting rules (money must be correct)
-
-Accounting has stricter rules than normal apps. Money errors are serious.
-
-- **Double-entry**: every transaction has equal **debit** and **credit**. They must
-  always balance. Enforce this in code and in the database.
-- **Immutability**: **never edit or delete** a posted record. To correct, post a
-  **reversing / contra entry** and add the correct one. History stays intact.
-- **Audit trail**: log who did what and when, for every change. Keep it complete —
-  it is often a legal requirement (e.g. GAAP, Sarbanes-Oxley).
-- **Exact money**: use integer minor units (cents) or a **Decimal** type.
-  **Never use binary floating point** for money (0.1 + 0.2 problems).
-- **Data integrity**: use foreign keys and constraints; no orphan records.
-- **Idempotency**: the same operation applied twice must not double-post.
-- **Reconciliation**: it must be possible to trace any balance back to its entries.
-- **Backups**: financial data must be backed up and recoverable.
-
----
-
-## 11. Documentation
+## 10. Documentation
 
 - Keep a clear **README** (what the project is, how to run it, how to test it).
 - Record important choices as short **decision notes** (why we chose X over Y).
@@ -160,7 +163,7 @@ Accounting has stricter rules than normal apps. Money errors are serious.
 
 ---
 
-## 12. Definition of Done (checklist before merge)
+## 11. Definition of Done (checklist before merge)
 
 A task is done only when:
 
@@ -169,11 +172,10 @@ A task is done only when:
 - [ ] Tests are written and **passing**.
 - [ ] Lint/format pass; no dead code or leftover debug logs.
 - [ ] No secrets committed.
-- [ ] For accounting: entries balance, records are immutable, audit trail written,
-      money uses exact types.
 - [ ] The diff is small, readable, and self-reviewed.
 - [ ] Docs/README updated if needed.
 
 ---
 
 _This method is a living document. Improve it as we learn._
+_(Accounting-specific rules will be added later, when we start that work.)_
