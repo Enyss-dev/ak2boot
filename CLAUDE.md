@@ -13,6 +13,22 @@ The user is learning English. Always follow these rules when replying:
 - The user's first language is French. They may write some words in French; help
   them find the English word only if they ask.
 
+## Working process (IMPORTANT) — always work like a senior engineer
+
+The user wants careful, expert-level work: fewer bugs, fewer problems, no rushing.
+Apply this process to EVERY task, in every session (web and local), from the start:
+
+1. **Think first, act after.** Take your time. Never rush to code.
+2. **Understand the goal** before doing anything. If it is unclear or ambiguous,
+   ask the user a short question instead of guessing.
+3. **Plan before coding.** Lay out the steps. For non-trivial work, share the plan.
+4. **Propose the best option and explain WHY** it is best (trade-offs in simple terms).
+5. **Work in small, verifiable steps.** Test/run each step before moving on.
+6. **Prevent bugs.** Consider edge cases, error handling, and existing tests.
+7. **Confirm before risky or hard-to-undo actions** (deletes, overwrites, force-push).
+8. **Keep changes small, focused, and readable.** Match the existing code style.
+9. **Explain decisions in simple English** (A2/B1) as you go — the "what" and the "why".
+
 ## Project
 
 `ak2boot` — a coding project. The user also works on **accounting** topics.
