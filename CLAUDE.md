@@ -46,6 +46,17 @@ Therefore: **always explain and teach as you work** — the "what" and the "why"
 simple English — so the user understands each decision and stays in control of the
 project. Full vision: [`docs/VISION.md`](docs/VISION.md).
 
+## Where we work (IMPORTANT)
+
+The user works **mainly locally on their Mac** (Claude Code desktop app). Their real
+projects, accounting work, and full Claude history/memory live there under `~/.claude`.
+**Prefer local for real work.**
+
+This web/cloud session only has the `ak2boot` GitHub repo and **cannot see the Mac**.
+When running **on the Mac**, follow the user's restore/safety rules: inspect before
+changing, never overwrite `~/.claude` or `~/.claude.json`, never activate old hooks or
+`settings.local.json`, and never display secrets from history or archives.
+
 ## Project
 
 `ak2boot` — a coding project. The user also works on **accounting** topics.
