@@ -35,6 +35,17 @@ for every SaaS, app, and development: the non-negotiable core (Agile loop, 12-Fa
 architecture, GitHub Flow), the task loop, testing, CI/CD, and security. Keep it up to
 date. (Accounting-specific rules will be added later, when we start that work.)
 
+## The user & mission
+
+The user is a solo learner and aspiring **AI-Augmented SaaS Architect-Entrepreneur**:
+they want to **build, manage, secure, and sell SaaS products** with AI help (Claude
+Code, Codex, ChatGPT) **without being a developer**, using a professional method.
+They learn **by doing**, together with you.
+
+Therefore: **always explain and teach as you work** — the "what" and the "why", in
+simple English — so the user understands each decision and stays in control of the
+project. Full vision: [`docs/VISION.md`](docs/VISION.md).
+
 ## Project
 
 `ak2boot` — a coding project. The user also works on **accounting** topics.
